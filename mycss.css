@@ -1,0 +1,181 @@
+/* h1,h2,h3{
+    font-family: "Monserrat-Bold";
+} */
+/* we can do this, if we want to apply to many headings same thing */
+
+/* if there's a class which is present in many locations but we want to target the one present in a specific id then write id name then class name.
+just like
+#id .class */
+
+/* this means the browser reads from right to left only when there's space btw 2 selectors*/
+/* right is child , left is parent */
+
+/* if there's no space then from left to right */
+/* h1#title means h1 having id = title */
+
+/* .container.title means an element having both classes container & title  */
+/* .container .title means an element having class title inside an element having container as its class */
+
+/* CSS given to [ id > class > HTML elements like h1,h2...]  */
+
+
+
+
+
+/* common section class */
+
+body{
+    text-align: center;
+}
+.white-area{
+    background-color: #fff;
+
+}
+
+.colored{
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+/* title */
+
+#title{
+    padding: 10px;
+}
+
+.starter{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 60px;
+    font: white;
+    line-height: 1.5;
+    text-align: left;
+}
+#title-one
+{
+    padding: 0 2%;
+}
+
+/* navbar */
+.navbar
+{
+padding-bottom: 0.7rem;
+}
+.nav-item
+{
+padding: 0 12.5px;
+}
+.nav-link
+{
+font-family: "Montserrat-Light";
+font-size: 1.5rem;
+}
+.navbar-brand
+{
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+.download-btn{
+    margin: 5px 10px 30px 0;
+}
+
+.title-image{
+    width: 260px;
+    transform: rotate(27deg);
+    position: absolute;
+    right: 16%;
+}
+
+/* features of text */
+#features{
+    padding: 0 15%;
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 1;
+}
+h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.feat{
+    justify-content: center;
+    color: #8f8f8f;
+}
+.feature-ox{
+    padding: 6%;
+}
+#iconic{
+    font-size: 3.8rem;
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+#iconic:hover{
+    color: #ff4c68;
+}
+
+/* testimonials */
+
+.carousel-item{
+    padding: 10% 20% 2%;
+
+}
+.test-img{
+    width: 15%;
+    border-radius: 100%;
+    margin: 0.8rem 0.7rem 3rem;
+}
+
+/* pricing */
+#pricing{
+    padding: 3%;
+}
+.pricing-col{
+    padding-top: 2%;
+}
+
+/* Call to Action  */
+#cta{
+    justify-content: center;
+    padding: 7%;
+}
+.cta-h3{
+    margin: 40px 0;
+    size: 2.5rem;
+    line-height: 2.5;
+}
+.download-cta-btn{
+    padding: 12px 20px;
+}
+
+
+/* Footer */
+
+
+.icon-foot{
+    margin: 40px 0 20px;
+    padding: 0 4px;
+}
+.icon-pic{
+    padding: 0 5px;
+}
+
+/* media queries */
+@media (max-width:1028px)
+{
+    #title{
+        text-align: center;
+    }
+    .title-image
+    {
+        position: static;
+        transform: rotate(0);
+        margin-top: 20px;
+    }
+}
+@media (min-width: 1028px)
+{
+    #title{
+        height: 460px;
+    }
+}
